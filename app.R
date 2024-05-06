@@ -26,7 +26,6 @@ ui <- navbarPage(
                  br(),
 h4("This simulator generates the distribution of iterations"),
 h4("untill reaching convergence on a single value for a given sample size."),
-a(h5("Click here for our new simulator"),href="https://yannapps.shinyapps.io/multiple_N_sizes/"),
 br(),br(),
 footer=h4("Algorithm by Prof. Yoav Kessler"),
                  # Sidebar with a slider input for number of bins
@@ -108,6 +107,3 @@ server <- function(input, output) {
 
 # Run the application
 shinyApp(ui = ui, server = server)
-
-
-
