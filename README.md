@@ -3,6 +3,6 @@ The interactive Shiny application, which simulates and visualizes the number of 
 <br>
 
 
-The simulation initializes with a vector of $N$ unique values, $$V_0 = \{v_1, v_2, \ldots, v_N\} \quad (N \text{ unique values})$$, updates successive states by sampling with replacement, $$V_k = \text{sample}(V_{k-1}, N, \text{replace} = TRUE)$$, and terminates at generation $K$ when absolute homogeneity is reached, $$\text{Stop at step } K \text{ when } \text{unique}(V_K) = 1$$.
+The simulation initializes with a vector of $N$ unique values, $$V_0 = \{v_1, v_2, \ldots, v_N\}$, updates successive states by sampling with replacement, $$V_k = \text{sample}(V_{k-1}, N, \text{replace} = TRUE)$$, and terminates at generation $K$ when the vector had converged on a single value $v$: $$\text{Stop at step } K \text{ when } \text{unique}(V_K) = 1$$.
 
 <img width="905" height="323" alt="image" src="https://github.com/user-attachments/assets/7c662b76-acb9-469c-b612-c4463a16dce7" />
