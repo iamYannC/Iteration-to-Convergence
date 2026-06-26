@@ -221,3 +221,4 @@ walk(1:length(wl),\(iter) plot_winner_loser_trajectory(wl[[iter]]))
 
 plot_fraction_histograms(conv,vsize)
 plot_fraction_at_iter(conv,vsize,6)
+   
